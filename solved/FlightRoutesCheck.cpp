@@ -23,7 +23,7 @@ void dfs(int v, int id) {
     
     for (int c : adj[v]) {
         if (!visited[c]) {
-            dfs(c, id + 1);
+            dfs(c, id + 1); // this is wrong !!, id must be a global count
         }
 
         if (inStack[c]) {
